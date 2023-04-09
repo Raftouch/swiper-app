@@ -11,4 +11,9 @@ export const animals: Animal[] = [
     name: "A girl and her dog",
     img: "../assets/girlAndDog.jpg",
   },
+  {
+    id: 2,
+    name: "A girl and a fish",
+    img: "../assets/girlAndFish.jpg",
+  },
 ];
