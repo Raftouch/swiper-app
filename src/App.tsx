@@ -4,6 +4,7 @@ import { AnimalContext } from "./context/AnimalContext";
 import { animals } from "./data/animals";
 import Navbar from "./components/Navbar";
 import NavItem from "./components/NavItem";
+import { FaBlog, FaPaw } from "react-icons/fa";
 import DropdownMenu from "./components/DropdownMenu";
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <AnimalContext.Provider value={{ animals }}>
         <Router>
           <Navbar>
-            <NavItem>
+            <NavItem icons={<FaBlog />} children={undefined} />
+            <NavItem icons={<FaPaw />}>
               <DropdownMenu />
             </NavItem>
           </Navbar>
