@@ -7,7 +7,7 @@ interface SwiperItemProps {
 
 export default function SwiperItem({ animal }: SwiperItemProps) {
   return (
-    <li className="w-[100%] flex-shrink-0">
+    <li className="w-[100%] flex-shrink-0 list-none">
       <img
         src={animal.img}
         alt={animal.name}

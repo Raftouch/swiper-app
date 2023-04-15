@@ -7,7 +7,7 @@ interface CatSliderItemProps {
 
 export default function CatSliderItem({cat}: CatSliderItemProps) {
   return (
-    <li className="w-[100%] flex-shrink-0">
+    <li className="w-[100%] flex-shrink-0 list-none">
     <img
       src={cat.img}
       alt={cat.name}

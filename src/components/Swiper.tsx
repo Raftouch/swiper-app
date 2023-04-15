@@ -7,12 +7,10 @@ export default function Swiper() {
 
   return (
     <div className="w-[500px] max-w-[100%] m-auto p-20 pt-40">
-      <div className="w-[100%] max-w-[100%] overflow-auto">
-        <ul className="flex min-w-[100%] p-0 m-0">
+      <div className="w-[100%] overflow-auto flex">
           {animals.map((animal) => (
             <SwiperItem animal={animal} key={animal.id} />
           ))}
-        </ul>
       </div>
     </div>
   );
