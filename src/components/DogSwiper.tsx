@@ -1,0 +1,17 @@
+import React, { useContext } from "react";
+import { DogContext } from "../context/DogContext";
+import DogSwiperItem from "./DogSwiperItem";
+
+export default function DogSwiper() {
+  const { dogs } = useContext(DogContext);
+
+  return (
+    <div className="w-[500px] max-w-[100%] m-auto pt-40 p-20">
+      <div className="w-[100%] overflow-auto flex gap-2">
+        {dogs.map((dog) => (
+          <DogSwiperItem dog={dog} key={dog.id} />
+        ))}
+      </div>
+    </div>
+  );
+}

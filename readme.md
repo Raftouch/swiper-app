@@ -5,4 +5,3 @@
 - [x] context
 - [x] i icons
 - [x] create swiper
-- [ ]

@@ -3,17 +3,27 @@ import { Animal } from "../models/Animal";
 export const animals: Animal[] = [
   {
     id: 0,
-    name: "A baby with a rabbit",
-    img: "../assets/babyAndRabbit.jpg",
+    name: "Animal",
+    img: "../assets/animals/animal0.jpg",
   },
   {
     id: 1,
-    name: "A girl and her dog",
-    img: "../assets/girlAndDog.jpg",
+    name: "Animal",
+    img: "../assets/animals/animal1.jpg",
   },
   {
     id: 2,
-    name: "A girl and a fish",
-    img: "../assets/girlAndFish.jpg",
+    name: "Animal",
+    img: "../assets/animals/animal2.jpg",
+  },
+  {
+    id: 3,
+    name: "Animal",
+    img: "../assets/animals/animal3.jpg",
+  },
+  {
+    id: 4,
+    name: "Animal",
+    img: "../assets/animals/animal4.jpg",
   },
 ];
