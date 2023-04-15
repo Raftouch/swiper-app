@@ -3,27 +3,23 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AnimalContext } from "./context/AnimalContext";
 import { animals } from "./data/animals";
 import Navbar from "./components/Navbar";
-import NavItem from "./components/NavItem";
-import { FaBlog, FaPaw } from "react-icons/fa";
-import DropdownMenu from "./components/DropdownMenu";
+import CatSlider from "./components/CatSlider";
+import { CatContext } from "./context/CatContext";
+import { cats } from "./data/cats";
 
 function App() {
   return (
-    <div className="bg-slate-50">
       <AnimalContext.Provider value={{ animals }}>
+      <CatContext.Provider value={{cats}}>
         <Router>
-          <Navbar>
-            <NavItem icons={<FaBlog />} children={undefined} />
-            <NavItem icons={<FaPaw />}>
-              <DropdownMenu />
-            </NavItem>
-          </Navbar>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Swiper />} />
+            <Route path="/cats" element={<CatSlider />} />
           </Routes>
         </Router>
+      </CatContext.Provider>
       </AnimalContext.Provider>
-    </div>
   );
 }
 
