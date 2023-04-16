@@ -9,7 +9,13 @@ export default function HomeSwiper() {
     <div className="w-[500px] max-w-[100%] m-auto pt-40 p-20">
       <div className="w-[100%] overflow-auto flex gap-2">
         {animals.map((animal) => (
-          <HomeSwiperItem animal={animal} key={animal.id} />
+          <HomeSwiperItem key={animal.id}>
+            <img
+              src={animal.img}
+              alt={animal.name}
+              className="w-[100%] h-[100%]"
+            />
+          </HomeSwiperItem>
         ))}
       </div>
     </div>

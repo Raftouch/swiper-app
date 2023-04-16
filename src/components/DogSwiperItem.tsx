@@ -1,17 +1,9 @@
-import { Animal } from "../models/Animal";
+import React from "react";
 
 interface DogSwiperItemProps {
-  dog: Animal;
+  children: React.ReactNode;
 }
 
-export default function DogSliderItem({ dog }: DogSwiperItemProps) {
-  return (
-    <li className="w-[100%] flex-shrink-0 list-none">
-      <img
-        src={dog.img}
-        alt={dog.name}
-        className="w-[100%] h-[100%] select-none"
-      />
-    </li>
-  );
+export default function DogSliderItem({ children }: DogSwiperItemProps) {
+  return <div className="w-[100%] flex-shrink-0">{children}</div>;
 }

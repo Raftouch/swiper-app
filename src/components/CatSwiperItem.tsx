@@ -1,18 +1,9 @@
 import React from "react";
-import { Animal } from "../models/Animal";
 
 interface CatSwiperItemProps {
-  cat: Animal;
+  children: React.ReactNode;
 }
 
-export default function CatSwiperItem({ cat }: CatSwiperItemProps) {
-  return (
-    <li className="w-[100%] flex-shrink-0 list-none">
-      <img
-        src={cat.img}
-        alt={cat.name}
-        className="w-[100%] h-[100%] select-none"
-      />
-    </li>
-  );
+export default function CatSwiperItem({ children }: CatSwiperItemProps) {
+  return <div className="w-[100%] flex-shrink-0">{children}</div>;
 }
